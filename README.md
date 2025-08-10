@@ -7,6 +7,7 @@ About This Project
 This portfolio is a single-page, responsive website designed to provide a comprehensive overview of my technical capabilities and accomplishments. It was built from the ground up using fundamental web technologies to ensure full control over the design and user experience. The entire process, from initial design to deployment, was handled by me.
 
 Features:
+
 • Fully Responsive Design: Adapts seamlessly to all screen sizes, from mobile phones to large desktops.
 
 • Single-Page Scrolling: A modern, continuous layout with smooth scrolling navigation.
@@ -20,6 +21,7 @@ Features:
 • Direct Contact Links: Easy access to my Resume, LinkedIn, GitHub, and Email.
 
 Sections:
+
 • Home: An animated introduction with my name and development roles.
 
 • About: My background, education, and technical interests.
@@ -35,6 +37,7 @@ Sections:
 • Contact: A simple way to get in touch or find me on other platforms.
 
 Technologies Used:
+
 • HTML5: For the core structure and content of the website.
 
 • CSS3 (with Tailwind CSS): For all styling, layout, and responsive design.
