@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamza's Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Swiper.js CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Link to your external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="flex">
+
+    <!-- Mobile Menu Button -->
+    <button id="menu-toggle" class="lg:hidden fixed top-4 right-4 z-40 p-2 bg-gray-800 rounded-md">
+        <i id="menu-icon" class="fas fa-bars text-xl"></i>
+    </button>
+
+    <!-- Sidebar -->
+    <nav id="sidebar" class="sidebar w-64 h-screen p-4 fixed top-0 left-0 flex-col z-30 -translate-x-full lg:translate-x-0">
+        <div>
+            <div class="flex items-center mb-8">
+                <div class="w-3 h-3 bg-red-500 rounded-full mr-2"></div>
+                <div class="w-3 h-3 bg-yellow-500 rounded-full mr-2"></div>
+                <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+            </div>
+            <h2 class="text-lg font-semibold mb-6 text-gray-400 uppercase tracking-wider">Portfolio Explorer</h2>
+        </div>
+        
+        <ul class="flex-grow">
+            <li class="mb-2"><a href="#home" class="sidebar-item flex items-center p-2 rounded-md text-gray-300 active"><i class="fas fa-home w-6 text-center"></i><span class="ml-3">Home</span></a></li>
+            <li class="mb-2"><a href="#about" class="sidebar-item flex items-center p-2 rounded-md text-gray-300"><i class="fas fa-user w-6 text-center"></i><span class="ml-3">About</span></a></li>
+            <li class="mb-2"><a href="#skills" class="sidebar-item flex items-center p-2 rounded-md text-gray-300"><i class="fas fa-code w-6 text-center"></i><span class="ml-3">Skills</span></a></li>
+            <li class="mb-2"><a href="#projects" class="sidebar-item flex items-center p-2 rounded-md text-gray-300"><i class="fas fa-project-diagram w-6 text-center"></i><span class="ml-3">Projects</span></a></li>
+            <li class="mb-2"><a href="#experience" class="sidebar-item flex items-center p-2 rounded-md text-gray-300"><i class="fas fa-briefcase w-6 text-center"></i><span class="ml-3">Experience</span></a></li>
+            <li class="mb-2"><a href="#achievements" class="sidebar-item flex items-center p-2 rounded-md text-gray-300"><i class="fas fa-trophy w-6 text-center"></i><span class="ml-3">Achievements</span></a></li>
+            <li class="mb-2"><a href="#contact" class="sidebar-item flex items-center p-2 rounded-md text-gray-300"><i class="fas fa-envelope w-6 text-center"></i><span class="ml-3">Contact</span></a></li>
+        </ul>
+        <div class="text-xs text-gray-500">
+            <p>..</p>
+            <p>...</p>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content" class="main-content flex-1 lg:ml-64 h-screen overflow-y-auto">
+        
+        <!-- Home Section -->
+        <section id="home" class="page-section h-full flex flex-col justify-center items-center text-center p-8 relative">
+            <div class="max-w-4xl">
+                <p id="welcome-text" class="font-code text-lg md:text-xl text-blue-300 mb-4"></p>
+                <h1 id="main-name" class="text-4xl md:text-7xl font-bold mb-4 opacity-0">Shaikh Mohammed Hamza</h1>
+                <div id="roles" class="text-lg md:text-2xl text-green-400 font-code mb-8"></div>
+                <p id="quote" class="text-md md:text-xl text-gray-400 italic opacity-0">"Blending code, creativity, and innovation into tomorrow's tech"</p>
+            </div>
+            <div class="absolute bottom-10"><a href="#about"><i class="fas fa-chevron-down text-2xl animate-bounce"></i></a></div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="page-section p-8 md:p-16">
+             <h2 class="text-4xl font-bold mb-12 text-center md:text-left">About</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="md:col-span-2 space-y-8">
+                    <div class="info-card">
+                        <h3 class="font-code text-xl text-blue-300 mb-4">About Me</h3>
+                        <p class="text-gray-300 mb-6 leading-relaxed">Engineering student pursuing B.E. in Electronics & Computer Science at SLRTCE Mumbai University (2022-2026). Passionate about game development, android development, and web innovation. Always exploring the intersection of technology and creativity.</p>
+                        <ul class="text-gray-300 space-y-2">
+                            <li class="flex items-start"><i class="fas fa-file-code text-green-400 mt-1 mr-3"></i><span>Built multiple websites</span></li>
+                            <li class="flex items-start"><i class="fas fa-gamepad text-green-400 mt-1 mr-3"></i><span>Unity & Unreal Engine developer</span></li>
+                            <li class="flex items-start"><i class="fab fa-android text-green-400 mt-1 mr-3"></i><span>Flutter & Android enthusiast</span></li>
+                        </ul>
+                    </div>
+                    <div class="info-card">
+                         <h3 class="text-lg font-bold mb-4 flex items-center"><i class="fas fa-lightbulb w-6 mr-2 text-blue-300"></i>Interests</h3>
+                         <div class="flex flex-wrap -m-1"><span class="interest-tag">Android Dev</span><span class="interest-tag">Game Dev</span><span class="interest-tag">Web Dev</span><span class="interest-tag">Flutter</span><span class="interest-tag">Unity</span></div>
+                    </div>
+                </div>
+                <div class="space-y-8">
+                    <div class="info-card text-center">
+                        
+                        <img src="" alt="Shaikh Mohammed Hamza" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-blue-400" onerror="this.onerror=null; this.src='Assets/profile.jpg';">
+                        <h4 class="text-xl font-bold">Shaikh Mohammed Hamza</h4>
+                        <p class="text-gray-400">Tech Enthusiast & Developer</p>
+                    </div>
+                    <div class="info-card">
+                        <h3 class="text-lg font-bold mb-4 flex items-center"><i class="fas fa-graduation-cap w-6 mr-2 text-blue-300"></i>Education</h3>
+                        <p class="font-semibold">B.E. Electronics & Computer Science</p>
+                        <p class="text-gray-400 text-sm">Shree L.R. Tiwari College Of Engineering</p>
+                        <p class="text-gray-400 text-sm">2022 - 2026</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Skills Section -->
+        <section id="skills" class="page-section p-8 md:p-16">
+            <div class="text-center max-w-3xl mx-auto">
+                <h2 class="text-4xl font-bold mb-4">Skills & Expertise</h2>
+                <p class="text-gray-400 mb-12">Proficient in multiple programming languages and technologies, with hands-on experience in full-stack development, mobile applications, game development, and hardware programming.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="skill-card"><h3 class="font-code text-lg mb-4 flex items-center"><i class="fas fa-code w-6 mr-3 text-blue-300"></i>Programming Languages</h3><div class="flex flex-wrap -m-1"><span class="skill-tag">C++</span><span class="skill-tag">Python</span><span class="skill-tag">JavaScript</span><span class="skill-tag">C#</span></div></div>
+                <div class="skill-card"><h3 class="font-code text-lg mb-4 flex items-center"><i class="fas fa-mobile-alt w-6 mr-3 text-blue-300"></i>Web & Mobile Development</h3><div class="flex flex-wrap -m-1"><span class="skill-tag">HTML/CSS</span><span class="skill-tag">Flutter</span><span class="skill-tag">Android Studios</span><span class="skill-tag">Web Development</span><span class="skill-tag">Dart</span></div></div>
+                <div class="skill-card"><h3 class="font-code text-lg mb-4 flex items-center"><i class="fas fa-gamepad w-6 mr-3 text-blue-300"></i>Game Development & Design</h3><div class="flex flex-wrap -m-1"><span class="skill-tag">Unity Engine</span><span class="skill-tag">Unreal Engine</span><span class="skill-tag">Proteus</span></div></div>
+                <div class="skill-card"><h3 class="font-code text-lg mb-4 flex items-center"><i class="fas fa-database w-6 mr-3 text-blue-300"></i>Database & Tools</h3><div class="flex flex-wrap -m-1"><span class="skill-tag">MS SQL</span><span class="skill-tag">MS Office</span><span class="skill-tag">LaTex</span></div></div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="page-section p-8 md:p-16">
+            <div class="text-center max-w-4xl mx-auto">
+                <h2 class="text-4xl font-bold mb-4">Featured Projects</h2>
+                <p class="text-gray-400 mb-12">Explore my portfolio of innovative projects spanning web development, mobile applications, IoT solutions, and game development using modern technologies.</p>
+            </div>
+            
+            <div class="swiper-container max-w-6xl mx-auto relative">
+                <div class="swiper-wrapper pb-12">
+                    <div class="swiper-slide"><div class="project-card" data-project="survival-room"><img src="" alt="Survival Room Game" class="w-full h-48 object-cover rounded-md mb-4" onerror="this.onerror=null; this.src='Assets/SR-H.png';"><h3 class="font-bold text-xl mb-2">Survival Room</h3><p class="text-gray-400 text-sm mb-4 flex-grow">A top-down zombie survival shooter built from scratch with vanilla JavaScript.</p><div class="project-card-tags flex flex-wrap -m-1"><span class="project-card-tag">JavaScript</span><span class="project-card-tag">HTML5</span><span class="project-card-tag">CSS3</span></div><button class="view-details-btn w-full p-2 rounded-md mt-6"><i class="fas fa-eye mr-2"></i>View Details</button></div></div>
+                    <div class="swiper-slide"><div class="project-card" data-project="parking"><img src="" alt="Smart Vehicle Parking System" class="w-full h-48 object-cover rounded-md mb-4" onerror="this.onerror=null; this.src='Assets/Smart Vehicle Parking System.jpeg';"><h3 class="font-bold text-xl mb-2">Smart Vehicle Parking System</h3><p class="text-gray-400 text-sm mb-4 flex-grow">IoT based parking solution using IR sensors, Arduino Uno, and Proteus simulation.</p><div class="project-card-tags flex flex-wrap -m-1"><span class="project-card-tag">Arduino</span><span class="project-card-tag">IR Sensors</span><span class="project-card-tag">Proteus</span></div><button class="view-details-btn w-full p-2 rounded-md mt-6"><i class="fas fa-eye mr-2"></i>View Details</button></div></div>
+                    <div class="swiper-slide"><div class="project-card" data-project="glasses"><img src="" alt="Anti Sleep Alarm Glasses" class="w-full h-48 object-cover rounded-md mb-4" onerror="this.onerror=null; this.src='Assets/Anti-Sleep Alarm Glasses.jpeg';"><h3 class="font-bold text-xl mb-2">Anti Sleep Alarm Glasses</h3><p class="text-gray-400 text-sm mb-4 flex-grow">Innovation award-winning wearable tech to prevent driver-fatigue.</p><div class="project-card-tags flex flex-wrap -m-1"><span class="project-card-tag">Arduino</span><span class="project-card-tag">Sensors</span><span class="project-card-tag">Hardware</span></div><button class="view-details-btn w-full p-2 rounded-md mt-6"><i class="fas fa-eye mr-2"></i>View Details</button></div></div>
+                    <div class="swiper-slide"><div class="project-card" data-project="amplifier"><img src="" alt="Mini Audio Amplifier" class="w-full h-48 object-cover rounded-md mb-4" onerror="this.onerror=null; this.src='Assets/Mini Audio Amplifier.jpeg';"><h3 class="font-bold text-xl mb-2">Mini Audio Amplifier</h3><p class="text-gray-400 text-sm mb-4 flex-grow">Best Technical Paper award-winning compact audio amplifier with Proteus design.</p><div class="project-card-tags flex flex-wrap -m-1"><span class="project-card-tag">Electronics</span><span class="project-card-tag">Proteus</span><span class="project-card-tag">PCB Design</span></div><button class="view-details-btn w-full p-2 rounded-md mt-6"><i class="fas fa-eye mr-2"></i>View Details</button></div></div>
+                    <div class="swiper-slide"><div class="project-card" data-project="cryptoza"><img src="" alt="Cryptoza" class="w-full h-48 object-cover rounded-md mb-4" onerror="this.onerror=null; this.src='Assets/Crypto Currency Wallet.png';"><h3 class="font-bold text-xl mb-2">Cryptoza Wallet</h3><p class="text-gray-400 text-sm mb-4 flex-grow">Crypto Currency Wallet website with live market price updates using JavaScript and CoinGecko API.</p><div class="project-card-tags flex flex-wrap -m-1"><span class="project-card-tag">JavaScript</span><span class="project-card-tag">API</span><span class="project-card-tag">Web Dev</span></div><button class="view-details-btn w-full p-2 rounded-md mt-6"><i class="fas fa-eye mr-2"></i>View Details</button></div></div>
+                    <div class="swiper-slide"><div class="project-card" data-project="honeybunny"><img src="" alt="Honey Bunny" class="w-full h-48 object-cover rounded-md mb-4" onerror="this.onerror=null; this.src='Assets/honeybunny.png';"><h3 class="font-bold text-xl mb-2">Honey Bunny: The Carrot Rush</h3><p class="text-gray-400 text-sm mb-4 flex-grow">A fun and fast-paced 2D platformer game developed using Unity for mobile.</p><div class="project-card-tags flex flex-wrap -m-1"><span class="project-card-tag">Unity</span><span class="project-card-tag">C#</span><span class="project-card-tag">Game Dev</span></div><button class="view-details-btn w-full p-2 rounded-md mt-6"><i class="fas fa-eye mr-2"></i>View Details</button></div></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </section>
+        
+        <!-- Experience Section -->
+        <section id="experience" class="page-section p-8 md:p-16">
+            <div class="text-center max-w-3xl mx-auto">
+                <h2 class="text-4xl font-bold mb-12">Technical Experience</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="experience-card">
+                    <i class="fas fa-shield-alt experience-icon"></i>
+                    <h3 class="text-xl font-bold mb-1">Cyber Security & Ethical Hacking</h3>
+                    <p class="text-sm text-gray-400 mb-4">WillMark International | May 2023 - June 2023</p>
+                    <p class="text-gray-300">Worked closely with industry professionals, participating in security assessments and simulated cyber attack scenarios, and gained practical experience in incident response.</p>
+                </div>
+                <div class="experience-card">
+                    <i class="fas fa-server experience-icon"></i>
+                    <h3 class="text-xl font-bold mb-1">Windows Server Administration</h3>
+                    <p class="text-sm text-gray-400 mb-4">Shree L.R. Tiwari College of Engineering | June 2024 - July 2024</p>
+                    <p class="text-gray-300">Handled server setup, maintenance, managed Active Directory, DNS & DHCP, ensured data security, optimized performance, and resolved technical issues.</p>
+                </div>
+                <div class="experience-card">
+                    <i class="fas fa-file-alt experience-icon"></i>
+                    <h3 class="text-xl font-bold mb-1">Technical Paper Writing</h3>
+                    <p class="text-sm text-gray-400 mb-4">MS Office - LaTex | Nov 2023 - Dec 2023</p>
+                    <p class="text-gray-300">Developed expertise in technical writing with Microsoft Office and LaTex, creating documents, reports, and presentations, while enhancing communication and collaboration skills.</p>
+                </div>
+                <div class="experience-card">
+                    <i class="fab fa-android experience-icon"></i>
+                    <h3 class="text-xl font-bold mb-1">Software Developer Engineer (Android / Native)</h3>
+                    <p class="text-sm text-gray-400 mb-4">Component | Dec 2024 - Jan 2025</p>
+                    <p class="text-gray-300">Developed Android applications using Flutter and Dart, with emphasis on responsive UI design, scalable architecture, and API integration. Gained hands-on experience in debugging, performance optimization, and using version control tools like Git.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements" class="page-section p-8 md:p-16">
+            <div class="text-center max-w-4xl mx-auto">
+                <h2 class="text-4xl font-bold mb-12">Achievements & Activities</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="achievement-card">
+                    <i class="fas fa-trophy achievement-icon text-yellow-400"></i>
+                    <h3 class="text-xl font-bold">Best Technical Paper</h3>
+                    <p class="text-sm text-blue-300 font-code my-2">ICAMCET '23 '24 | 6th March 2024</p>
+                    <p class="text-gray-400 text-sm flex-grow">Received the Best Technical Paper Award at The International Convention on Applied Mathematics and Computing in Engineering & Technology for a report on the Mini Audio Amplifier project.</p>
+                </div>
+                <div class="achievement-card highlight">
+                    <i class="fas fa-trophy achievement-icon text-gray-300"></i>
+                    <h3 class="text-xl font-bold">2nd Place</h3>
+                    <p class="text-sm text-blue-300 font-code my-2">Idea Presentation/Pitching Competition | 8th and 9th February</p>
+                    <p class="text-gray-400 text-sm flex-grow">Secured second place with the Anti-sleep alarm glasses project, designed to prevent drowsiness and enhance safety and productivity.</p>
+                </div>
+                <div class="achievement-card">
+                    <i class="fas fa-users achievement-icon text-blue-400"></i>
+                    <h3 class="text-xl font-bold">Technical Committee Core Member</h3>
+                    <p class="text-sm text-blue-300 font-code my-2">Shree L.R. Tiwari College of Engineering | July 2023 - May 2024</p>
+                    <p class="text-gray-400 text-sm flex-grow">As a core member of my college's Student Council Technical Committee, I organized, hosted and executed technical events, coordinated team efforts, and managed event logistics.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="page-section p-8 md:p-16">
+            <div class="text-center max-w-4xl mx-auto">
+                <h2 class="text-4xl font-bold mb-12">Contact</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="contact-card">
+                    <h3 class="font-code text-lg mb-6 flex items-center"><i class="fas fa-envelope-open-text w-6 mr-3 text-blue-300"></i>Get In Touch</h3>
+                    <a href="https://drive.google.com/file/d/1opYi2T06eH7MVQWvmmKL344yFISIqlwx/view?usp=drive_link" target="_blank" class="contact-link"><i class="fas fa-download w-6 mr-3"></i>Download Resume</a>
+                    <a href="https://www.linkedin.com/in/shaikhmohammedhamza" target="_blank" class="contact-link"><i class="fab fa-linkedin w-6 mr-3"></i>LinkedIn Profile</a>
+                    <a href="https://github.com/Hamza2523" target="_blank" class="contact-link"><i class="fab fa-github w-6 mr-3"></i>GitHub Profile</a>
+                    <a href="mailto:shaikhmohammedhamza25@gmail.com" class="contact-link"><i class="fas fa-envelope w-6 mr-3"></i>Email Me</a>
+                </div>
+                <div class="contact-card">
+                    <h3 class="font-code text-lg mb-6 flex items-center"><i class="fas fa-paper-plane w-6 mr-3 text-yellow-400"></i>Send Message</h3>
+                    <form action="#" class="contact-form">
+                        <input type="text" placeholder="Your Name">
+                        <input type="email" placeholder="Your Email">
+                        <textarea placeholder="Your Message" rows="5"></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="modal-overlay hidden">
+        <div id="modal-content-container" class="modal-content"></div>
+    </div>
+
+    <!-- Hidden divs with modal content -->
+    <div class="hidden">
+        <div id="modal-survival-room"><i class="fas fa-times modal-close-btn"></i><h2 class="text-3xl font-bold mb-6 text-blue-300">Survival Room</h2><div class="grid grid-cols-1 md:grid-cols-2 gap-8"><div><img src="" alt="Survival Room" class="w-full rounded-lg shadow-lg" onerror="this.onerror=null; this.src='Assets/SR-G.png';"></div><div><h3 class="text-xl font-bold mb-2 text-green-400">Description</h3><p class="mb-6">This is a top-down zombie survival shooter I built from scratch using only vanilla JavaScript, HTML5, and CSS3. It was a fun challenge to create a complete game experience with core web technologies.</p><h3 class="text-xl font-bold mb-2 text-green-400">Key Features</h3><ul class="space-y-2"><li class="modal-key-feature">Endless Waves: The zombie horde gets stronger and more numerous over time.</li><li class="modal-key-feature">Dual-Weapon System: Switch between a pistol and a fire axe.</li><li class="modal-key-feature">Environmental Hazards: Bombs start appearing from Wave 2.</li><li class="modal-key-feature">Dynamic Power-ups: Health and Rage packs.</li><li class="modal-key-feature">Savage Taunts: The game taunts you if you die.</li></ul><div class="mt-6 flex flex-wrap -m-1"><span class="interest-tag">JavaScript</span><span class="interest-tag">HTML5</span><span class="interest-tag">CSS3</span><span class="interest-tag">Game Dev</span></div><div class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4"><a href="https://hamza2523.github.io/Survival-Room-Game/" target="_blank" class="modal-action-btn block w-full p-2 rounded-md text-center"><i class="fas fa-play mr-2"></i>Live Demo</a><a href="https://github.com/Hamza2523/Survival-Room-Game?tab=readme-ov-file" target="_blank" class="modal-action-btn block w-full p-2 rounded-md text-center"><i class="fab fa-github mr-2"></i>Source Code</a></div></div></div></div>
+        <div id="modal-amplifier"><i class="fas fa-times modal-close-btn"></i><h2 class="text-3xl font-bold mb-6 text-blue-300">Mini Audio Amplifier</h2><div class="grid grid-cols-1 md:grid-cols-2 gap-8"><div><img src="" alt="Mini Audio Amplifier" class="w-full rounded-lg shadow-lg" onerror="this.onerror=null; this.src='Assets/Mini Audio Amplifier.jpeg';"></div><div><h3 class="text-xl font-bold mb-2 text-green-400">Description</h3><p class="mb-6">Developed a compact audio amplifier using Proteus for schematic and PCB layout. Assembled and tested prototype, receiving positive feedback for high-fidelity performance.</p><h3 class="text-xl font-bold mb-2 text-green-400">Key Features</h3><ul class="space-y-2"><li class="modal-key-feature">Compact audio amplifier design</li><li class="modal-key-feature">Proteus schematic and PCB layout</li><li class="modal-key-feature">High-fidelity audio performance</li><li class="modal-key-feature">Prototype assembly and testing</li><li class="modal-key-feature">Award winning technical paper</li><li class="modal-key-feature">Professional circuit design</li></ul><div class="mt-6 flex flex-wrap -m-1"><span class="interest-tag">Electronics</span><span class="interest-tag">Proteus</span><span class="interest-tag">PCB Design</span><span class="interest-tag">Circuit Analysis</span></div></div></div></div>
+        <div id="modal-glasses"><i class="fas fa-times modal-close-btn"></i><h2 class="text-3xl font-bold mb-6 text-blue-300">Anti Sleep Alarm Glasses</h2><div class="grid grid-cols-1 md:grid-cols-2 gap-8"><div><img src="" alt="Anti Sleep Alarm Glasses" class="w-full rounded-lg shadow-lg" onerror="this.onerror=null; this.src='Assets/Anti-Sleep Alarm Glasses.jpeg';"></div><div><h3 class="text-xl font-bold mb-2 text-green-400">Description</h3><p class="mb-6">Developed Anti-Sleep Alarm Glasses to prevent driver fatigue. Assembled and tested prototypes for accurate detection and timely alerts, receiving positive feedback for innovation and reliability.</p><h3 class="text-xl font-bold mb-2 text-green-400">Key Features</h3><ul class="space-y-2"><li class="modal-key-feature">Prevents driver fatigue and drowsiness</li><li class="modal-key-feature">Accurate detection of sleep patterns</li><li class="modal-key-feature">Timely alert system with buzzer</li><li class="modal-key-feature">Compact, lightweight wearable design</li><li class="modal-key-feature">Prototype assembly and testing</li><li class="modal-key-feature">Innovation award-winning design</li></ul><div class="mt-6 flex flex-wrap -m-1"><span class="interest-tag">Arduino</span><span class="interest-tag">Sensors</span><span class="interest-tag">Hardware</span><span class="interest-tag">Wearable Tech</span></div></div></div></div>
+        <div id="modal-parking"><i class="fas fa-times modal-close-btn"></i><h2 class="text-3xl font-bold mb-6 text-blue-300">Smart Vehicle Parking System</h2><div class="grid grid-cols-1 md:grid-cols-2 gap-8"><div><img src="" alt="Smart Vehicle Parking System" class="w-full rounded-lg shadow-lg" onerror="this.onerror=null; this.src='Assets/Smart Vehicle Parking System.jpeg';"></div><div><h3 class="text-xl font-bold mb-2 text-green-400">Description</h3><p class="mb-6">Developed a Smart Vehicle Parking System prototype, using IR sensors, Arduino Uno, Servomotor and LCD for display the parking slots. And used Proteus for circuit simulation.</p><h3 class="text-xl font-bold mb-2 text-green-400">Key Features</h3><ul class="space-y-2"><li class="modal-key-feature">IR sensor-based vehicle detection</li><li class="modal-key-feature">Arduino Uno microcontroller integration</li><li class="modal-key-feature">Servomotor for automated barrier control</li><li class="modal-key-feature">LCD display for parking slot status</li><li class="modal-key-feature">Proteus circuit simulation</li><li class="modal-key-feature">Real-time parking availability monitoring</li></ul><div class="mt-6 flex flex-wrap -m-1"><span class="interest-tag">Arduino</span><span class="interest-tag">IR Sensors</span><span class="interest-tag">Proteus</span><span class="interest-tag">C++</span><span class="interest-tag">LCD Display</span></div></div></div></div>
+        <div id="modal-cryptoza"><i class="fas fa-times modal-close-btn"></i><h2 class="text-3xl font-bold mb-6 text-blue-300">Crypto Currency Wallet with Live Market Price</h2><div class="grid grid-cols-1 md:grid-cols-2 gap-8"><div><img src="" alt="Cryptoza" class="w-full rounded-lg shadow-lg" onerror="this.onerror=null; this.src='Assets/Crypto Currency Wallet.png';"></div><div><h3 class="text-xl font-bold mb-2 text-green-400">Description</h3><p class="mb-6">Developed a Crypto Currency Wallet website with live market price updates using JavaScript and CoinGecko API. Designed a responsive UI for tracking wallet balance and major cryptocurrency prices in real-time.</p><h3 class="text-xl font-bold mb-2 text-green-400">Key Features</h3><ul class="space-y-2"><li class="modal-key-feature">Live cryptocurrency prices using CoinGecko API</li><li class="modal-key-feature">Real-time market data and charts</li><li class="modal-key-feature">Responsive UI design for wallet tracking</li><li class="modal-key-feature">Major cryptocurrency price monitoring</li><li class="modal-key-feature">Real-time balance updates</li><li class="modal-key-feature">User-friendly trading interface</li></ul><div class="mt-6 flex flex-wrap -m-1"><span class="interest-tag">Javascript</span><span class="interest-tag">CoinGecko API</span><span class="interest-tag">Web Development</span><span class="interest-tag">Responsive Design</span></div><a href="https://mogalribba.github.io/Cryptocurrency-Wallet-with-live-market-price/" target="_blank" class="modal-action-btn block w-full p-2 rounded-md mt-6 text-center"><i class="fas fa-external-link-alt mr-2"></i>View Live Demo</a></div></div></div>
+        <div id="modal-honeybunny"><i class="fas fa-times modal-close-btn"></i><h2 class="text-3xl font-bold mb-6 text-blue-300">Honey Bunny: The Carrot Rush</h2><div class="grid grid-cols-1 md:grid-cols-2 gap-8"><div><img src="" alt="Honey Bunny" class="w-full rounded-lg shadow-lg" onerror="this.onerror=null; this.src='Assets/honeybunny.png';"></div><div><h3 class="text-xl font-bold mb-2 text-green-400">Description</h3><p class="mb-6">Honey Bunny is a fun and fast paced 2D platformer game developed using Unity, where players control a cute bunny on a mission to collect carrots while avoiding deadly bees. The game features smooth joystick controls, dynamic enemies, and a vibrant environment designed to engage casual gamers of all ages.</p><h3 class="text-xl font-bold mb-2 text-green-400">Key Features</h3><ul class="space-y-2"><li class="modal-key-feature">Joystick-controlled movement for mobile gameplay</li><li class="modal-key-feature">Carrot collectibles to increase score</li><li class="modal-key-feature">Challenging bee enemies that trigger a Game Over on collision</li><li class="modal-key-feature">Win and Game Over screens with restart and quit options</li><li class="modal-key-feature">Animated Home screen with Start button</li><li class="modal-key-feature">Optional background music and sound effects</li><li class="modal-key-feature">Hardcore mode: Larger, randomly spawning bees for 10 seconds</li></ul><div class="mt-6 flex flex-wrap -m-1"><span class="interest-tag">Unity</span><span class="interest-tag">C#</span><span class="interest-tag">Game Development</span><span class="interest-tag">Mobile</span></div><a href="https://houtarou25.itch.io/honeybunny" target="_blank" class="modal-action-btn block w-full p-2 rounded-md mt-6 text-center"><i class="fas fa-download mr-2"></i>Download Game</a></div></div></div>
+    </div>
+
+
+    <!-- Swiper.js JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Link to your external JS file -->
+    <script src="script.js"></script>
+</body>
+</html>
